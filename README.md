@@ -21,6 +21,8 @@ the raw version of the dataset (PCAP file format).
 Then, first run [pcapfix](https://github.com/Rup0rt/pcapfix) and then [reordercap](https://www.wireshark.org/docs/man-pages/reordercap.html)
 on the PCAP files.
 
+For CIC-IDS-2017 files, remove the duplicated traffic of the original pcap files provided by the authors using the provided script and the following syntax : `./remove_traffic_duplication.sh PCAP_folder_in PCAP_folder_out`
+
 Then, run [our modified version of the CICFlowMeter tool](https://github.com/GintsEngelen/CICFlowMeter) on the data
 obtained in the previous step:
  
