@@ -26,6 +26,8 @@ An extended documentation of our paper can be found [here](https://intrusion-det
 First, head over to the website of the dataset (either CIC-IDS-2017 or CSE-CIC-IDS-2018) and download 
 the raw version of the dataset (PCAP file format). 
 
+Then, navigate to "Original Network Traffic and Log data/Friday-02-03-2018/pcap" and delete the following file: 'capEC2AMAZ-O4EL3NG-172.31.69 - Copy.24' (This file contains traffic from the previous day and thus leads to duplicate flow entries).
+
 Then, first run [pcapfix](https://github.com/Rup0rt/pcapfix) and then [reordercap](https://www.wireshark.org/docs/man-pages/reordercap.html)
 on the PCAP files.
 
